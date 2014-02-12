@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/u13_ror/!svn/ver/2040/Kambhampati_nagarajan/project/projectapp/app/views/post_answers
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/u13_ror/!svn/ver/2040/Kambhampati_nagarajan/project/projectapp/app/views/post_answers/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/u13_ror/!svn/ver/1400/Kambhampati_nagarajan/project/projectapp/app/views/post_answers/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/u13_ror/!svn/ver/1400/Kambhampati_nagarajan/project/projectapp/app/views/post_answers/new.html.erb
+END
+show.json.jbuilder
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/u13_ror/!svn/ver/1400/Kambhampati_nagarajan/project/projectapp/app/views/post_answers/show.json.jbuilder
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/u13_ror/!svn/ver/1400/Kambhampati_nagarajan/project/projectapp/app/views/post_answers/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/u13_ror/!svn/ver/1707/Kambhampati_nagarajan/project/projectapp/app/views/post_answers/_form.html.erb
+END
+index.json.jbuilder
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/u13_ror/!svn/ver/1400/Kambhampati_nagarajan/project/projectapp/app/views/post_answers/index.json.jbuilder
+END

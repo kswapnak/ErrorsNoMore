@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  reputation_points: 0
+  user: one
+
+two:
+  reputation_points: 0
+  user: two
+
+three:
+  reputation_points: 50
+  user: three

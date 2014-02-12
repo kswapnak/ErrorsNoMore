@@ -1,0 +1,14 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  answer: Problem Solved
+  post_question: one
+  user_display_name: Swap
+  user: one
+
+two:
+  answer: This is so simple
+  post_question : two
+  user_display_name: Deep
+  number_of_votes: 1
+  user: two

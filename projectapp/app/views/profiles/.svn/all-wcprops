@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/u13_ror/!svn/ver/2032/Kambhampati_nagarajan/project/projectapp/app/views/profiles
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/u13_ror/!svn/ver/2004/Kambhampati_nagarajan/project/projectapp/app/views/profiles/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/u13_ror/!svn/ver/2004/Kambhampati_nagarajan/project/projectapp/app/views/profiles/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/u13_ror/!svn/ver/2004/Kambhampati_nagarajan/project/projectapp/app/views/profiles/new.html.erb
+END
+show.json.jbuilder
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/u13_ror/!svn/ver/2004/Kambhampati_nagarajan/project/projectapp/app/views/profiles/show.json.jbuilder
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/u13_ror/!svn/ver/2032/Kambhampati_nagarajan/project/projectapp/app/views/profiles/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/u13_ror/!svn/ver/2004/Kambhampati_nagarajan/project/projectapp/app/views/profiles/_form.html.erb
+END
+index.json.jbuilder
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/u13_ror/!svn/ver/2004/Kambhampati_nagarajan/project/projectapp/app/views/profiles/index.json.jbuilder
+END

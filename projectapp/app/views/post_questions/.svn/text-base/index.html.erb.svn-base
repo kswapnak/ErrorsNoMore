@@ -1,0 +1,8 @@
+<h1 style="color:coral">Top Questions</h1>
+ <% @post_questions.each do |post_question| %>
+ <p><strong><%= link_to post_question.question, show_post_question_path(post_question, post_question.question) %></strong></p>
+  <p style="color:coral"><%= "By #{post_question.user.email}"%></p>
+   <p><%= "asked #{time_ago_in_words post_question.created_at} ago" %></p>
+   <%= post_question.post_answers.count %> Answers
+   <hr width =100% >
+    <% end %>

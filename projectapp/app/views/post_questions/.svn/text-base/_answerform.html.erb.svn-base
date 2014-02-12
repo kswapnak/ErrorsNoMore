@@ -1,0 +1,27 @@
+<hr width =100% >
+<h1 style="color:coral">Answers</h1>
+<% @post_answers.each do |post_answer| %>
+    <p><%= post_answer.answer %></p>
+    <% if !post_answer.user_display_name.nil? && post_answer.user_display_name != ""%>
+		<p style="color:coral"><%= "Answered by #{post_answer.user_display_name}"%></p>
+	<%else%>
+		<p style="color:coral"><%= "Answered by anonymous"%></p>
+	<%end%>
+
+    <p><%= "answered #{time_ago_in_words post_answer.created_at} ago" %></p>
+     
+    <%= post_answer.number_of_votes %> Votes
+    <% if !current_user.nil? && current_user.id != post_answer.user_id %>
+    | <%= link_to 'Like', {:controller => "post_questions", :action => "show", :vote => 1, :answer_id => post_answer.id } %>|
+    
+    <% if (post_answer.number_of_votes != 0)%>
+    <%= link_to 'Not helpful', {:controller => "post_questions", :action => "show", :vote => -1, :answer_id => post_answer.id } %>
+    <% end%>
+    |
+    <% end%>
+    <%= link_to 'Edit', edit_post_answer_path(post_answer) %> (requires 50 reputation points) 
+    <% if !current_user.nil? && current_user.id == post_answer.user_id %>
+     | <%= link_to 'Destroy', post_answer, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end%>
+  <hr width =100% >
+<% end %>

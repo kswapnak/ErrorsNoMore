@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:FloralWhite;">
+
+<head>
+  <title>Welcome to ErrorsNoMore</title>
+
+  <h1 style="color:darkred;font-family:Courier New;font-size:250%"> Welcome to ErrorsNoMore</h1>
+
+   <strong><%= link_to 'ASK QUESTION', new_post_question_path %> </strong>
+   <br><br>
+
+   
+
+  <%= form_tag(post_questions_path, :method => "get", class: "navbar-form", id: "search-form") do %>
+    <div class="input-append">
+      <%= text_field_tag :search, params[:search], :size =>100, :name => "search" %>
+      <button class="btn" type="submit" value = "HTML">Search</button>
+    </div>
+  <% end %>
+
+ 
+    <p class="home", id="home">
+    <%= link_to 'Home', post_questions_path %> 
+    <% if !current_user.nil?%> |
+    <%= link_to 'My Profile', Profile.find_by_user_id(current_user.id)%>
+    <% end%>
+   </p>
+   
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <br>
+   <p class="alert" id="error"><%= alert %></p>
+  <% if user_signed_in? %>
+   Signed in as <%=current_user.email %>. Not you? 
+  <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+  <% else %>
+  <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+  <br>
+  <% end %>
+  
+</head>
+<br><br>
+<hr />
+<body>
+
+
+<div class="topbar">
+      <div class="fill">
+	    <div class="container">
+	      <ul class="nav">
+	        <%= yield %>
+	    </div>
+	  </div>
+	</div>
+
+</body>
+<footer>
+<div class="container">
+</div>
+<%= link_to "About us", about_post_questions_path %>
+<br>
+<%= link_to "Feedback", feedback_post_questions_path %>
+
+<br>
+©Errorsnomore 2013
+  <% else %>
+ </footer>
+</html>

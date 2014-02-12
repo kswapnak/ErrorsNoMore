@@ -1,0 +1,54 @@
+<p class="edit_profile">
+<%= link_to 'Edit Profile', edit_user_registration_path %>
+</p>
+
+<p class="edit_profile">
+<%= link_to 'Edit Picture', edit_profile_path %>
+</p>
+<br>
+<p class="profile_value">
+<%= image_tag(@profile.picture_url, :width => 200) if @profile.picture.present? %>
+</p>
+
+<p class= "profile">
+  <strong>Email:</strong>
+</p>
+
+<p class="profile_value">
+<strong><%= @profile.user.email %></strong>
+</p>
+<br>
+<p class= "profile">
+  <strong>Reputation points:</strong>
+</p>
+
+<p class="profile_value">
+<strong><%= @profile.reputation_points %> reputations</strong>
+</p>
+<br>
+<p class= "profile">
+  <strong>Member for:</strong>
+</p>
+
+<p class="profile_value">
+<strong><%= time_ago_in_words @profile.created_at %></strong>
+</p>
+<br>
+<p class= "profile">
+  <strong>Answers:</strong>
+</p>
+
+<p class="profile_value">
+<strong>You have posted <%= @profile.user.post_answers.count %> answers</strong>
+</p>
+
+<br>
+<p class= "profile">
+  <strong>Questions:</strong>
+</p>
+
+<p class="profile_value">
+<strong>You have asked <%= @profile.user.post_questions.count %> questions</strong>
+</p>
+
+

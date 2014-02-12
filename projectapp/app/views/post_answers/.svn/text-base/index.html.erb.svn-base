@@ -1,0 +1,27 @@
+<h1>Listing post_answers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Answer</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @post_answers.each do |post_answer| %>
+      <tr>
+        <td><%= post_answer.answer %></td>
+        <td><%= link_to 'Show', post_answer %></td>
+        <td><%= link_to 'Edit', edit_post_answer_path(post_answer) %></td>
+        <td><%= link_to 'Destroy', post_answer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post answer', new_post_answer_path %>

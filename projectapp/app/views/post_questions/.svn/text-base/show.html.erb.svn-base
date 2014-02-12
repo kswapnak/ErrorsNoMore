@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+<br>
+<h1>
+  <strong><%= @post_question.question %></strong>
+  
+</h1>
+
+<p>
+  <%= @post_question.body %>
+</p>
+
+<p>
+  <strong>"asked by"</strong>
+  <%= @post_question.user.email %>
+</p>
+<p><%= time_ago_in_words @post_question.created_at  %> ago</p>
+<%= @post_question.post_answers.count %> Answers
+<% if !current_user.nil? && current_user.id == @post_question.user_id %>
+<%= link_to 'Edit', edit_post_question_path(@post_question) %> | 
+<%= link_to 'Destroy', @post_question, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end%>
+<%= link_to 'Back', post_questions_path %>
+
+
+<%= render :partial => 'answerform', :locals => {:post_answers => @post_answers }%>
+<%= render :partial => '/post_answers/form', :locals => {:post_answer => @post_answer, :post_question_id => params[:id]} %>
+
+
